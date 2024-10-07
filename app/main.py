@@ -8,3 +8,13 @@ app: FastAPI = FastAPI(title=settings.PROJECT_TITLE, version=settings.PROJECT_VE
 @app.get("/")
 def index() -> str:
     return "Hello, World! - Subrata Mondal 🚀"
+
+Image = list[list[float]]
+
+pic:Image = [
+    [0.0, 0.0, 0.0, 0.0, 0.0],
+    [0.0, 0.0, 0.0, 0.0, 0.0],
+    [0.0, 0.0, 0.0, 0.0, 0.0],
+    [0.0, 0.0, 0.0, 0.0, 0.0],
+    [0.0, 0.0, 0.0, 0.0, 0.0],
+]
